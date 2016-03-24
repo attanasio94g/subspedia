@@ -1,2 +1,2 @@
 # subspedia
-Coming soon.
+Extension for Chrome and Opera.
