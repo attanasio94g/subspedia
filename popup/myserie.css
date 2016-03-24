@@ -1,0 +1,41 @@
+.series
+{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #d7fbe7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+.img_serie
+{
+    height: 85px;
+    width: 85px;
+}
+.download_img
+{
+    margin-top: 57px;
+    height: 20px;
+    width: 20px;
+}
+.new_img
+{
+    height: 25px;
+    width: 25px;
+}
+.titolo_serie
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+.button, .button:hover
+{
+    background-color: orange;
+    border-radius: 3px;
+    margin-left: 34%;
+    margin-right: 34%;
+}
+
+.titolo_ep
+{
+    width: 100%;
+}

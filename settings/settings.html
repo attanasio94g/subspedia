@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Impostazioni Subspedia</title>
+	<link rel="stylesheet" type="text/css" href="../library/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="settings.css">
+  	<meta charset="utf-8">
+</head>
+<body>
+<div class="row">
+	<div class="small-12 large-centered columns">
+		<img src="../img/logo.jpg">
+	</div>
+</div>
+
+<div class="row" style="margin-top: 1%; color: #038F3F;">
+	<div class="small-12 large-centered columns">
+		<h1 style="text-align: center;">Impostazioni</h1>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 1%;">
+	<div class="small-10 large-centered columns">
+		<div class="callout">
+			<div class="row">
+				<div class="large-6 columns">
+					<label>Serie di cui vuoi ricevere aggiornamenti <input type="text" id="search" autocomplete="off" placeholder="Cerca">
+						<select id="series" size="10" style="height: auto;">
+						</select>
+					</label>
+				</div>
+				<div class="large-6 columns">
+					<label>Serie selezionate <br>
+						<button id="elimina" style="cursor: pointer;" data-tooltip title="Seleziona le serie che vuoi eliminare" type="button" class="button has-tip right" >Elimina</button>
+					<select id="selected_series" size="10" style="height: auto;" multiple>
+					</select>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 3%; margin-bottom: 1%;">
+		<div class="small-10 large-centered columns">
+			<div class="row">
+				<div class="large-3 columns">
+					<div class="callout" style="height: 70px;">
+						<label class="float-left" style="margin-top: 5px;">Notifiche</label>
+						<div class="switch float-right">
+							<input class="switch-input" id="switchNotif" type="checkbox" name="exampleSwitch">
+							<label class="switch-paddle" for="switchNotif">
+								<span class="show-for-sr">Do you like me?</span>
+								<span class="switch-active" aria-hidden="true">Si</span>
+								<span class="switch-inactive" aria-hidden="true">No</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="large-5 columns">
+					<div class="callout" style="height: 70px;">
+						<div class="small-8 columns">
+							<label class="float-left" style="margin-top: 5px;">Tempo verifica nuovi episodi</label>
+						</div>
+						<div class="small-4 columns">
+							<input type="number" id="timeEp" min="15">
+						</div>
+					</div>
+				</div>
+				<div class="large-4 columns">
+					<div class="callout" style="height: 70px;">
+						<div class="small-6 columns" style="padding: 0;">
+							<label class="float-left" style="margin-top: 5px;">Popup di Default</label>
+						</div>
+						<div class="small-6 columns" style="padding: 0;">
+							<select id="popup_page" style="width: 130px;">
+								<option>Le mie serie</option>
+								<option>Ultimi episodi</option>
+								<option>In traduzione</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<footer>
+	<div style="text-align: center;">
+		<a class="foot_link" href="http://www.giuseppeattanasio.me" target="_blank">About</a>
+		<a class="foot_link" href="https://www.paypal.me/master94ga" target="_blank">Donation</a>
+		<a class="foot_link" href="https://github.com/master94ga/subspedia" target="_blank">Changelog</a>
+	</div>
+</footer>
+</body>
+
+<script src="../library/jquery-2.2.1.min.js"></script>
+<script src="../library/foundation.min.js"></script>
+<script src="settings.js"></script>
+</html>

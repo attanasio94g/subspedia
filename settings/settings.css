@@ -1,0 +1,47 @@
+footer
+{
+    background-color: #038F3F;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+.foot_link, .foot_link:hover
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: orange;
+}
+body
+{
+    background-color: #83CFA1;
+}
+.callout
+{
+    background-color: #059F42; !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+label
+{
+    color: #FD8;
+    font-family: 'Raleway', sans-serif;
+}
+.button, .button:hover, input:checked ~ .switch-paddle, .switch-paddle
+{
+  background-color: orange;
+  border-radius: 3px;
+}
+#search, #timeEp, select
+{
+    border-radius: 3px;
+}
+input:checked~.switch-paddle::after,.switch-paddle::after
+{
+    border-radius: 3px;
+}
+#series.loading
+{
+    background: white url(../img/loading.gif) no-repeat center;
+    background-size: 60px;
+}
