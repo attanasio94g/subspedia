@@ -16,7 +16,7 @@
 
   "background": {
     "scripts": [
-      "library/jquery-2.2.1.min.js",
+      "library/jquery-2.2.2.min.js",
       "js/notification.js",
       "js/background.js"
     ],
