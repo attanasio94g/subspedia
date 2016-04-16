@@ -1,3 +1,8 @@
+// Copyright (c) 2016 Giuseppe Attanasio
+// License: Academic Free License ("AFL") v. 3.0
+// AFL License page: http://opensource.org/licenses/AFL-3.0
+// giuseppeattanasio.me - https://github.com/master94ga
+
 function showNotification(nome_serie) {
     var id = '1'; //Id of the notification
 

@@ -27,7 +27,7 @@ label
     color: #FD8;
     font-family: 'Raleway', sans-serif;
 }
-.button, .button:hover, input:checked ~ .switch-paddle, .switch-paddle
+.button, .button:hover, input:checked ~ .switch-paddle, .switch-paddle, .button:focus
 {
   background-color: orange;
   border-radius: 3px;

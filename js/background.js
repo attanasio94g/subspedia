@@ -1,3 +1,8 @@
+// Copyright (c) 2016 Giuseppe Attanasio
+// License: Academic Free License ("AFL") v. 3.0
+// AFL License page: http://opensource.org/licenses/AFL-3.0
+// giuseppeattanasio.me - https://github.com/master94ga
+
 //Initialize local storage on first installation and update
 chrome.runtime.onInstalled.addListener(function () {
     chrome.storage.sync.get(function(items) {
