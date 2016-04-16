@@ -12,15 +12,29 @@ $.ajax({
         var strippedData = data.replace(/src='(?:[^'\/]*\/)*([^']+)'/g, "");
         $(strippedData).find('.itemListaSerie').each(function() {
 
-            var $title = $("<div class='title_in_trad'><h7>"+$(this).attr('title')+"" +
-                "<a class='info' href='http://www.subspedia.tv/traduzioni.php' target='_blank'><i class='fa fa-info-circle'></i></a></h7><br></div>");
+            var $series = $('<div>', {
+                'class':'title_in_trad'
+            }).appendTo('.serieintraduzione');
 
-            $('.serieintraduzione').append($title);
+            var $text = $("<h7></h7>").text($(this).attr('title')).appendTo($series);
+
+            var $link = $('<a>',{
+                'class': 'info',
+                'href':  'http://www.subspedia.tv/traduzioni.php',
+                'target': '_blank'
+            }).appendTo($text);
+
+            $('<i>',{
+                'class': 'fa fa-info-circle'
+            }).appendTo($link);
+
             found = true;
         });
         if (!found)
         {
-            $('.serieintraduzione').append("<h5 class='no_serie'>Nessuna serie in traduzione.</h5>");
+            $('<h5></h5>',{
+                'class': 'no_serie'
+            }).text('Nessuna serie in traduzione.').appendTo('.serieintraduzione');
         }
         $("#loading").hide();
     }
