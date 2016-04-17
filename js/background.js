@@ -8,19 +8,9 @@ chrome.runtime.onInstalled.addListener(function () {
     chrome.storage.sync.get(function(items) {
         //Fired on first installation
         if(typeof items.settings === 'undefined'){
-            chrome.storage.sync.set({'settings': ({timeEp: 30, notification: true, popup: 'popup/myserie.html' }), version: '1.0'});
+            chrome.storage.sync.set({'settings': ({timeEp: 30, notification: true, popup: 'popup/myserie.html' })});
             window.open('../settings/settings.html');
         }
-
-        /*//Fired on update of the extension
-        if(items.version == '1.0') //or other version
-        {
-            chrome.storage.sync.set({version: '1.01'}, function()
-            {
-                console.log("Extension updated.")
-                //Open changelog.
-            });
-        }*/
     });
 });
 
